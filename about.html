@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="animated-bg">
+        <div class="gradient-mesh"></div>
+    </div>
+
+    <nav class="glass-nav">
+        <div class="nav-container">
+            <a href="menu.html" class="nav-logo">Portfolio</a>
+            <div class="nav-links">
+                <a href="about.html" class="active">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="education.html">Education</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <a href="menu.html" class="nav-menu-btn">☰ Menu</a>
+        </div>
+    </nav>
+
+    <div class="content-container">
+        <div class="breadcrumb">
+            <a href="menu.html">Menu</a> / <span>About Me</span>
+        </div>
+
+        <div class="page-header">
+            <h1 class="page-title fade-in">About Me</h1>
+            <div class="title-underline"></div>
+        </div>
+
+        <div class="about-content">
+            <div class="photo-section fade-in">
+                <div class="photo-frame">
+                    <div class="photo-slider" id="photoSlider">
+                        <div class="photo-slide active">
+                            <img src="profile-photo-formal.jpg" alt="Vetrivel S - Formal">
+                        </div>
+                        <div class="photo-slide">
+                            <img src="profile-photo-casual.jpg" alt="Vetrivel S - Casual">
+                        </div>
+                        <!-- Navigation Arrows -->
+                        <button class="photo-nav prev" onclick="changePhoto(-1)">❮</button>
+                        <button class="photo-nav next" onclick="changePhoto(1)">❯</button>
+                    </div>
+                    <div class="photo-glow"></div>
+                    <!-- Navigation Dots -->
+                    <div class="photo-dots">
+                        <span class="dot active" onclick="setPhoto(0)"></span>
+                        <span class="dot" onclick="setPhoto(1)"></span>
+                    </div>
+                </div>
+                <div class="resume-download">
+                    <a href="VETRIVEL-S_RESUME-1.pdf" class="btn-primary" download>
+                        <span>📄</span> Download Resume
+                    </a>
+                </div>
+            </div>
+
+            <div class="bio-section fade-in">
+                <h2>Hello, I'm <span class="highlight">Vetrivel S</span></h2>
+                <p class="intro-text">
+                    A passionate and motivated Electrical and Electronics Engineering student seeking opportunities to kickstart my career in 
+                    <span class="highlight">Power Systems and Electronics Design</span>. 
+                    I'm eager to apply my knowledge and contribute to innovative projects.
+                </p>
+
+                <div class="info-grid">
+                    <div class="info-item">
+                        <h3>🎯 Career Objective</h3>
+                        <p>As a recent EEE graduate, I have a strong foundation in Electrical and Electronics Engineering. I have gained hands-on experience through internships and projects, developing technical skills in circuit design, power systems, and programming languages like MATLAB, MiPower Software Simulation and C. I'm eager to apply my knowledge and skills to contribute to company growth while continuously learning and enhancing my abilities.</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h3>💡 What Drives Me</h3>
+                        <p>My biggest achievement is being part of a team that designed an energy-efficient lighting system for a community center, reducing their electricity consumption by 30%. My attention to detail, problem-solving abilities, and strong analytical skills drive me to successfully complete projects on time.</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h3>🌟 Key Strengths</h3>
+                        <ul>
+                            <li>Team work and collaboration</li>
+                            <li>Time Management</li>
+                            <li>Strong communication skills</li>
+                            <li>Problem-solving and analytical thinking</li>
+                            <li>Detail-oriented and committed to quality</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-item">
+                        <h3>🎨 Area of Interest</h3>
+                        <p>Electronics Devices and Circuit design, Power System Analysis, and developing innovative solutions for energy efficiency and automation.</p>
+                    </div>
+                </div>
+
+                <div class="quick-facts">
+                    <h3>Quick Facts</h3>
+                    <div class="facts-grid">
+                        <div class="fact">
+                            <span class="fact-icon">📍</span>
+                            <span class="fact-label">Location:</span>
+                            <span class="fact-value">Namakkal, Tamil Nadu - 637208</span>
+                        </div>
+                        <div class="fact">
+                            <span class="fact-icon">🎓</span>
+                            <span class="fact-label">Major:</span>
+                            <span class="fact-value">Electrical & Electronics Engineering</span>
+                        </div>
+                        <div class="fact">
+                            <span class="fact-icon">🗣️</span>
+                            <span class="fact-label">Languages:</span>
+                            <span class="fact-value">Tamil, English</span>
+                        </div>
+                        <div class="fact">
+                            <span class="fact-icon">💼</span>
+                            <span class="fact-label">Status:</span>
+                            <span class="fact-value">Open to Opportunities</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
